@@ -52,3 +52,4 @@ reportlab
 opencv-python==4.9.0.80
 pandas==1.3.5
 django-cors-headers==4.1.0
+gunicorn==21.2.0
