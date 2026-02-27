@@ -303,7 +303,7 @@ def get_accessible_sections(request, course_id):
 
 
 #change code 24/01/2025  vikas
-@api_login_required
+# @api_login_required
 
 def courses(request):
     # courses_qs = Course.objects.filter(is_featured=True).order_by('id')
@@ -438,7 +438,7 @@ def Admin_course_Overview(admin, course):
 
 
 
-@api_login_required
+# @api_login_required
 def course_overview(request, id, course_url):
     # Use the correct Course field name `url_link_name` (models.Course defines `url_link_name`).
     course = get_object_or_404(Course, pk=id, url_link_name=course_url)
@@ -575,7 +575,7 @@ def course_overview(request, id, course_url):
 
 
 #change code 24/01/26 vikas
-@api_login_required
+# @api_login_required
 def course_section(request, id, course_url, section_url):
     course = get_object_or_404(Course, pk=id, url_link_name=course_url)
 
@@ -2759,7 +2759,9 @@ def save_video_progress(request):
 # Purpose: Load completion status on page load
 # Route: GET /courses/<course_id>/get-video-progress/
 # ============================================================
-@login_required(login_url='login')
+# @login_required(login_url='login')
+@api_login_required
+
 def get_video_progress(request, course_id):
     """
     API endpoint to get user's video progress for a specific course

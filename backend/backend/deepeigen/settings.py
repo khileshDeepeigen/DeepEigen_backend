@@ -39,9 +39,8 @@ MAINTENANCE_MODE = int(os.environ.get("MAINTENANCE_MODE", 0))
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# DEBUG = False
+
+DEBUG = False
 
 
 
@@ -115,7 +114,8 @@ CORS_ALLOWED_ORIGINS = [
 
 
 # CORS_ALLOW_ALL_ORIGINS = True
-SESSION_EXPIRE_SECONDS = int(os.getenv("SESSION_EXPIRE_SECONDS", 85400))
+
+SESSION_EXPIRE_SECONDS             = 85400
 
 SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
 SESSION_TIMEOUT_REDIRECT           = 'home'
@@ -145,9 +145,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = os.getenv('WSGI_APPLICATION')
+WSGI_APPLICATION = 'deepeigen.wsgi.application'
 
-AUTH_USER_MODEL = os.getenv('AUTH_USER_MODEL')
+AUTH_USER_MODEL = 'accounts.Account'
 
 
 # Database
@@ -294,7 +294,7 @@ MESSAGE_TAGS = {
 # Default primary key field type
 # https://docs.djangopr oject.com/en/3.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = os.getenv('DEFAULT_AUTO_FIELD')
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Reference: https://www.geekinsta.com/send-email-using-amazon-ses-in-django/
 # Amazon Service SES
@@ -314,8 +314,11 @@ EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 
 
-EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS')
-# EMAIL_USE_SSL = True
+EMAIL_USE_TLS = True
+
+
+
+
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
 
 
@@ -343,8 +346,7 @@ RAZORPAY_API_SECRET_KEY = os.getenv('RAZORPAY_API_SECRET_KEY')
 
 MERCHANT_KEY = os.getenv('MERCHANT_KEY')
 MERCHANT_SALT = os.getenv('MERCHANT_SALT')
-PAYU_MODE = os.getenv('PAYU_MODE')
-
+PAYU_MODE = 'Live'
 
 
 
@@ -358,32 +360,24 @@ PAYU_MODE = os.getenv('PAYU_MODE')
 
 
 
-# -----------------------------
-# CSRF & Cookie security settings
-# -----------------------------
-# Trusted origins for CSRF (include frontend origin(s) and production hostnames)
-FRONTEND_URL = os.getenv("FRONTEND_URL")
+CSRF_TRUSTED_ORIGINS = [
+    FRONTEND_URL,
+    "http://127.0.0.1:5173",
+    "https://stg-deepeigen.herokuapp.com",
+]
 
-CSRF_TRUSTED_ORIGINS = os.getenv( "CSRF_TRUSTED_ORIGINS","").split(",")
 CSRF_COOKIE_HTTPONLY = False
 
-# Samesite and Secure flags depend on environment. For local development without HTTPS,
-# use 'Lax' so cookies work across local origins. In production (DEBUG=False) use 'None'
-# together with Secure=True to allow cross-site cookies from HTTPS frontend origin.
 if DEBUG:
-    # Local development: keep cookies lax/secure off so local tooling (non-HTTPS) works
     CSRF_COOKIE_SAMESITE = 'Lax'
     SESSION_COOKIE_SAMESITE = 'Lax'
     CSRF_COOKIE_SECURE = False
     SESSION_COOKIE_SECURE = False
 else:
-    # Production: allow cross-site cookies from an HTTPS frontend origin.
     # NOTE: Browsers require Secure=True when SameSite=None, so your frontend must be served over HTTPS.
     CSRF_COOKIE_SAMESITE = 'None'
     SESSION_COOKIE_SAMESITE = 'None'
     CSRF_COOKIE_SECURE = True
     SESSION_COOKIE_SECURE = True
 
-# ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
-
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
