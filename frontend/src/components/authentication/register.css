@@ -1,0 +1,82 @@
+/* Register Page Specific Styles */
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.form-row .form-group {
+    flex: 2;
+}
+
+.form-select {
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: all 0.2s ease;
+    color: #000;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 20px;
+    cursor: pointer;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+.register-panel-right{
+    width: 900px;
+}
+
+.form-select:focus {
+    border-color: #174cd2;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(23, 76, 210, 0.1);
+}
+
+.form-select.placeholder-option {
+    color: #999;
+}
+
+.form-select option {
+    color: #000;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-select option:disabled {
+    color: #999;
+    background-color: #f5f5f5;
+}
+
+/* Full width form group for single elements */
+.form-group.full-width {
+    width: 100%;
+}
+
+/* --- Responsive Design for Register Page --- */
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 0;
+    }
+    
+    .form-row .form-group {
+        margin-bottom: 0;
+    }
+}
+
+/* Small mobile devices (360px and below) */
+@media (max-width: 360px) {
+    .form-select {
+        font-size: 14px;
+        padding: 12px 14px;
+    }
+}

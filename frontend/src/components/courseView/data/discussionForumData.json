@@ -1,0 +1,127 @@
+{
+  "forum": {
+    "searchPlaceholder": "Search topic for discussion",
+    "filters": [
+      { "id": "all", "label": "All" },
+      { "id": "week-1", "label": "Week 1" },
+      { "id": "week-2", "label": "Week 2" },
+      { "id": "week-3", "label": "Week 3" },
+      { "id": "week-4", "label": "Week 4" }
+    ],
+    "sortOptions": [
+      { "id": "recent", "label": "Most Recent" },
+      { "id": "popular", "label": "Most Popular" },
+      { "id": "unanswered", "label": "Unanswered" }
+    ]
+  },
+  "posts": [
+    {
+      "id": 1,
+      "author": "Mariam P",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Mariam",
+      "title": "What is the value of X in this equation?",
+      "content": "When solving this equation in constant value function, i did not received any result though this method. Please help me solve this problem using this method of solution while keeping the algorithm same.",
+      "week": "Week-1",
+      "date": "Apr 22, 2025",
+      "replyCount": 7,
+      "replies": [],
+      "isExpanded": false
+    },
+    {
+      "id": 2,
+      "author": "John D",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=John",
+      "title": "Confusion about Gradient Descent algorithm",
+      "content": "I'm having trouble understanding how the gradient descent algorithm works in practice. Can someone explain with a simple example?",
+      "week": "Week-2",
+      "date": "Apr 20, 2025",
+      "replyCount": 5,
+      "replies": [
+        {
+          "id": 1,
+          "author": "Sarah M",
+          "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
+          "content": "Gradient descent is an optimization algorithm used to minimize functions by iteratively moving in the direction of steepest descent.",
+          "timestamp": "Apr 21, 2025"
+        },
+        {
+          "id": 2,
+          "author": "Professor A",
+          "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Professor",
+          "content": "Think of it like trying to find the lowest point in a valley by always walking downhill.",
+          "timestamp": "Apr 21, 2025"
+        }
+      ],
+      "isExpanded": true
+    },
+    {
+      "id": 3,
+      "author": "Alex R",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex",
+      "title": "Linear Regression assignment help needed",
+      "content": "I'm stuck on question 3 of the Linear Regression assignment. Has anyone completed it and can provide some guidance?",
+      "week": "Week-1",
+      "date": "Apr 19, 2025",
+      "replyCount": 3,
+      "replies": [
+        {
+          "id": 1,
+          "author": "Lisa K",
+          "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Lisa",
+          "content": "For question 3, you need to use the normal equation. Check the lecture notes from Wednesday.",
+          "timestamp": "Apr 20, 2025"
+        }
+      ],
+      "isExpanded": false
+    },
+    {
+      "id": 4,
+      "author": "David W",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=David",
+      "title": "Best resources for Probability Theory review",
+      "content": "Looking for additional resources to review probability concepts covered in Week 2. Any recommendations?",
+      "week": "Week-2",
+      "date": "Apr 18, 2025",
+      "replyCount": 8,
+      "replies": [],
+      "isExpanded": false
+    },
+    {
+      "id": 5,
+      "author": "Priya S",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Priya",
+      "title": "SVM kernel trick explanation",
+      "content": "Can someone explain the kernel trick in SVM with a simple example? I'm finding the mathematical notation confusing.",
+      "week": "Week-4",
+      "date": "Apr 17, 2025",
+      "replyCount": 4,
+      "replies": [
+        {
+          "id": 1,
+          "author": "Michael T",
+          "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Michael",
+          "content": "The kernel trick allows SVM to operate in a high-dimensional feature space without explicitly computing coordinates.",
+          "timestamp": "Apr 18, 2025"
+        }
+      ],
+      "isExpanded": false
+    }
+  ],
+  "ui": {
+    "buttons": {
+      "writePost": "✏️ Write a post",
+      "filter": "Filter",
+      "sort": "Sort",
+      "viewReplies": "View {count} Replies",
+      "hideReplies": "Hide Replies",
+      "sendReply": "➤"
+    },
+    "placeholders": {
+      "reply": "Give a reply..."
+    },
+    "messages": {
+      "postAction": "posted a discussion in",
+      "noPosts": "No discussions found. Be the first to post!"
+    }
+  }
+}

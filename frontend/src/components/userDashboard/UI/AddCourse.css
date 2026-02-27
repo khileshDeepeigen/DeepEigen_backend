@@ -1,0 +1,32 @@
+.CourseComp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.CourseComp-container {
+    width: 80vw;
+}
+
+.CourseComp-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.CourseComp-heading {
+    font-size: 40px;
+    font-weight: 400;
+    /* letter-spacing: .2em; */
+}
+
+.CourseComp-subheading {
+    color: #666;
+    font-size: 20px;
+    margin-bottom: 40px;
+}

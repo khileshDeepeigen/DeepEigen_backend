@@ -1,0 +1,559 @@
+/* courseView.css - Updated for Tailwind */
+
+/* Keep only the container and responsive styles, remove component-specific styles */
+
+.course-view-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.course-view-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+    width: 100vw;
+}
+
+.course-view-main {
+    flex: 1;
+    padding-top: 20px;
+    padding-left: 10vw;
+    width: 90vw;
+    background-color: #ffffff;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.course-view-main::-webkit-scrollbar {
+    display: none;
+}
+
+/* Desktop Sidebar - Normal Position */
+.course-view-sidebar {
+    width: 30%;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+/* Mobile Sidebar - Initially Hidden */
+.course-view-sidebar-mobile {
+    display: none;
+}
+
+/* Header */
+.course-view-header {
+    margin-bottom: 24px;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A212F;
+    cursor: pointer;
+    padding: 0;
+}
+
+.back-button span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.back-button:hover {
+    color: #0066cc;
+}
+
+/* Video Section */
+.video-section {
+    margin-bottom: 24px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #000;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+/* Video Player Container */
+.video-player-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.video-player-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Tabs */
+.tabs-container {
+    display: flex;
+    gap: 24px;
+    margin: 24px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+}
+
+.tab.active {
+    color: #0066cc;
+    border-bottom-color: #0066cc;
+}
+
+.tab:hover {
+    color: #333;
+}
+
+/* Scrollbar Hide */
+.course-view-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .course-view-wrapper {
+        height: auto;
+        overflow: auto;
+    }
+    
+    .course-view-container {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .course-view-main {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        height: auto;
+        overflow-y: visible;
+        padding: 0 15px;
+        padding-top: 15px;
+    }
+
+    /* Hide Desktop Sidebar in Mobile */
+    .course-view-sidebar {
+        display: none;
+    }
+
+    /* Show Mobile Sidebar in Mobile */
+    .course-view-sidebar-mobile {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        order: 2;
+    }
+
+    /* Video Section */
+    .video-section {
+        order: 1;
+        margin-bottom: 20px;
+        aspect-ratio: 16 / 9;
+    }
+
+    /* Mobile Sidebar Container */
+    .course-view-sidebar-mobile > div {
+        width: 100% !important;
+        margin-left: 0 !important;
+        height: auto !important;
+        max-height: 400px;
+        overflow-y: auto;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        background: white;
+    }
+
+    .tabs-container {
+        order: 3;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .tab {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    /* Content Sections */
+    .course-view-main > div:last-child {
+        padding: 0 10px;
+        padding-bottom: 20px;
+    }
+
+    /* Header Styling for Mobile */
+    .back-button span {
+        font-size: 18px;
+    }
+
+    .course-view-sidebar-mobile{
+        width: 100% !important;
+    }
+
+    .course-view-sidebar-mobile :global(.ml-5) {
+        margin-left: 0 !important;
+    }
+
+    .course-view-sidebar-mobile :global(.h-screen) {
+        height: auto !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .course-view-main {
+        padding: 0 10px;
+        padding-top: 10px;
+    }
+    
+
+    .back-button {
+        font-size: 16px;
+        text-align: start ;
+    }
+
+    
+
+    .tabs-container {
+        gap: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .tab {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    /* Video Responsive */
+    .video-section video {
+        width: 100%;
+        height: auto;
+    }
+
+    .course-view-header{
+        width: 300px;
+        
+    }
+    
+}
+
+@media (min-width: 320px){
+.tab{
+    font-size: 15px;
+}
+.tabs-container{
+    display: flex;
+    gap: 15px;
+}
+}
+
+@media (max-width: 375px){
+.tab{
+    font-size: 13px;
+}
+.tabs-container{
+    display: flex;
+    gap: 20px;
+}
+
+
+}
+
+/* Assignments Component Styles */
+.assignments-container {
+    padding: 20px;
+    max-width: 93vw;
+    margin: 0 auto;
+}
+
+.assignments-header {
+    margin-bottom: 24px;
+}
+
+.assignments-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1A212F;
+    margin-bottom: 8px;
+}
+
+.assignments-subtitle {
+    color: #666;
+    font-size: 14px;
+}
+
+.assignments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.assignment-card {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.2s ease;
+}
+
+.assignment-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #0066cc;
+}
+
+.assignment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.assignment-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.assignment-icon {
+    color: #0066cc;
+}
+
+.assignment-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A212F;
+    margin-bottom: 4px;
+}
+
+.assignment-type {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+
+.assignment-type.optional {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.assignment-type.mandatory {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.submission-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.submission-status.submitted {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.submission-status.pending {
+    background: #fff3e0;
+    color: #ef6c00;
+}
+
+.assignment-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #1A212F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.download-btn:hover:not(:disabled) {
+    background: #2d3a4f;
+}
+
+.download-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.upload-section {
+    position: relative;
+}
+
+.upload-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.upload-btn:hover:not(.loading):not(.success) {
+    background: #0052a3;
+}
+
+.upload-btn.loading {
+    background: #999;
+    cursor: wait;
+}
+
+.upload-btn.success {
+    background: #2e7d32;
+}
+
+.upload-btn.submitted {
+    background: #138a19;
+}
+
+.submitted-date {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Loading and Error States */
+.assignments-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #e0e0e0;
+    border-top-color: #0066cc;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-bottom: 16px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.assignments-error,
+.assignments-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.assignments-error {
+    color: #c62828;
+}
+
+.assignments-empty {
+    color: #666;
+}
+
+.assignments-empty svg,
+.assignments-error svg {
+    margin-bottom: 16px;
+    opacity: 0.5;
+}
+
+.assignments-empty h3,
+.assignments-error h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.assignments-empty p,
+.assignments-error p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Mobile Responsive for Assignments */
+@media (max-width: 640px) {
+    .assignments-container {
+        padding: 15px;
+    }
+
+    .assignments-header h2 {
+        font-size: 20px;
+    }
+
+    .assignment-card {
+        padding: 16px;
+    }
+
+    .assignment-name {
+        font-size: 16px;
+    }
+
+    .assignment-actions {
+        flex-direction: column;
+    }
+
+    .download-btn,
+    .upload-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,243 @@
+.careers-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 60px 24px;
+    background: #fff;
+}
+
+.careers-container {
+    width: 100%;
+    max-width: 956px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    max-height: 430px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.careers-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.careers-title {
+    color: #1A212F;
+    font-family: 'Bricolage Grotesque', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    margin: 0;
+}
+
+.careers-subtitle {
+    color: rgba(26, 33, 47, 0.7);
+    font-family: 'Bricolage Grotesque', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+}
+
+.jobs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 23px;
+    width: 100%;
+}
+
+.open-roles {
+    color: rgba(26, 33, 47, 0.7);
+    font-family: 'Bricolage Grotesque', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 93%;
+    margin: 0;
+}
+
+.jobs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.job-card {
+    display: flex;
+    width: 100%;
+    padding: 28px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid rgba(26, 33, 47, 0.24);
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.job-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.job-title {
+    color: #1A212F;
+    font-family: 'Bricolage Grotesque', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
+    margin: 0;
+}
+
+.job-meta {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    flex-wrap: wrap;
+}
+
+.job-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.job-meta-item span {
+    color: rgba(26, 33, 47, 0.7);
+    font-family: 'Bricolage Grotesque', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.job-meta-item svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.job-apply {
+    display: flex;
+}
+
+.apply-button {
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: rgba(23, 76, 210, 0.06);
+    color: #174CD2;
+    font-family: 'Bricolage Grotesque', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+}
+
+.apply-button:hover {
+    background: rgba(23, 76, 210, 0.12);
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .careers-page {
+        padding: 40px 20px;
+    }
+
+    .careers-title {
+        font-size: 32px;
+    }
+
+    .careers-subtitle {
+        font-size: 18px;
+    }
+
+    .job-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .apply-button {
+        width: 100%;
+    }
+
+    .job-meta {
+        gap: 20px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .careers-page {
+        padding: 30px 16px;
+    }
+
+    .careers-container {
+        gap: 20px;
+    }
+
+    .careers-title {
+        font-size: 28px;
+        letter-spacing: -0.56px;
+    }
+
+    .hero-image {
+        height: 230px;
+    }
+
+    .careers-subtitle {
+        font-size: 16px;
+    }
+
+    .job-card {
+        padding: 20px;
+    }
+
+    .job-title {
+        font-size: 20px;
+    }
+
+    .job-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .apply-button {
+        font-size: 14px;
+        padding: 10px 16px;
+        text-wrap: inherit;
+    }
+}

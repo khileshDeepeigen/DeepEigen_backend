@@ -1,0 +1,114 @@
+:root {
+  --pricing-bg-white: #FFF;
+  --pricing-fg-grey-1: #1A212F;
+  --pricing-fg-grey-2: rgba(26, 33, 47, 0.70);
+  --pricing-fg-grey-3: rgba(26, 33, 47, 0.40);
+  --pricing-fg-secondary: rgba(23, 76, 210, 0.48);
+  --pricing-bg-primary: #174CD2;
+  --pricing-fg-inverse-1: #FFF;
+  --pricing-border-grey-2: rgba(26, 33, 47, 0.24);
+  --pricing-fg-primary: #174CD2;
+  --pricing-border-primary: #174CD2;
+  --pricing-cat-a: #0F9C95;
+  --pricing-cat-b: #F59949;
+  --pricing-check-green: #0F9C0F;
+  --pricing-cross-red: #CE2823;
+  --pricing-best-value-bg: #FFE4C3;
+  --pricing-best-value-text: #8E5004;
+}
+
+.Subscription-container-wrapper {
+  padding: 63px 20px;
+  background: var(--pricing-bg-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .pricing-header {
+    /* max-width: 776px; */
+    width: 80vw;
+    margin: 0 auto 54px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pricing-title {
+    color: var(--pricing-fg-grey-1);
+    font-size: clamp(28px, 5vw, 40px);
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    margin: 0 0 8px;
+  }
+
+  .pricing-description {
+    color: rgb(167, 149, 149);
+    font-size: clamp(16px, 3vw, 16px);
+    font-weight: 300;
+    line-height: normal;
+    max-width: 48vw;
+  }
+
+  .or-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    margin: 24px 0;
+  }
+
+  .or-divider .line {
+    flex: 1;
+    height: 1px;
+    background: var(--pricing-border-grey-2);
+  }
+
+  .or-divider span {
+    color: var(--pricing-fg-grey-1);
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .Subscription-container-wrapper {
+    .pricing-description {
+      font-size: clamp(6px, 3vw, 16px);
+      max-width: 95vw;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Subscription-container-wrapper {
+    padding: 40px 16px;
+
+    .pricing-header {
+      margin-bottom: 32px;
+    }
+
+    .pricing-description {
+      font-size: clamp(6px, 3vw, 16px);
+      max-width: 98vw;
+    }
+  }
+
+}
+
+@media (max-width: 480px) {
+  .Subscription-container-wrapper {
+    padding: 10px 10px;
+
+    .pricing-description {
+      max-width: 98vw;
+    }
+
+    .pricing-header {
+      width:86vw;
+    }
+  }
+}

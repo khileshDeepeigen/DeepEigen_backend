@@ -1,0 +1,91 @@
+{
+  "overview": {
+    "description": "This machine learning course is tentatively a 7 weeks course. Ideally, a student spending 10 hours per week should be able to finish the course in the specified number of weeks."
+  },
+  "courseSchema": [
+    {
+      "week": "Week - 1",
+      "description": "Overview of Machine Learning Linear Regression"
+    },
+    {
+      "week": "Week - 2",
+      "description": "Overview of Machine Learning Linear Regression"
+    },
+    {
+      "week": "Week - 3",
+      "description": "Probability Foundations and Logistic Regression"
+    },
+    {
+      "week": "Week - 4",
+      "description": "Regularization and Model Evaluation"
+    },
+    {
+      "week": "Week - 5",
+      "description": "Support Vector Machines and Kernel Methods"
+    },
+    {
+      "week": "Week - 6",
+      "description": "Neural Networks Fundamentals"
+    },
+    {
+      "week": "Week - 7",
+      "description": "Optimization Algorithms and Deep Learning"
+    }
+  ],
+  "courseDetails": {
+    "instructor": {
+      "label": "Instructor",
+      "value": "Sanjeev Sharma",
+      "icon": "FaUserAlt",
+      "color": "blue",
+      "iconColor": "text-blue-600",
+      "bgColor": "bg-blue-50"
+    },
+    "freeVideos": {
+      "label": "Free videos",
+      "value": "Click here to watch ↗",
+      "link": "#",
+      "icon": "PiFilmSlateBold",
+      "color": "indigo",
+      "iconColor": "text-indigo-600",
+      "bgColor": "bg-indigo-50",
+      "isLink": true
+    },
+    "feeForeign": {
+      "label": "Fee: Foreign",
+      "value": "$25",
+      "icon": "FaCircleDollarToSlot",
+      "color": "sky",
+      "iconColor": "text-sky-600",
+      "bgColor": "bg-sky-50"
+    },
+    "feeIndia": {
+      "label": "Fee: India",
+      "value": "₹ 999",
+      "icon": "RiMoneyRupeeCircleFill",
+      "color": "blue",
+      "iconColor": "text-blue-600",
+      "bgColor": "bg-blue-50"
+    },
+    "firstOffered": {
+      "label": "First Offered",
+      "value": "2019",
+      "icon": "FaCalendarAlt",
+      "color": "indigo",
+      "iconColor": "text-indigo-600",
+      "bgColor": "bg-indigo-50"
+    },
+    "expectedEngagement": {
+      "label": "Expected Course Engagement",
+      "value": "10 Hrs/Week",
+      "icon": "FaClock",
+      "color": "blue",
+      "iconColor": "text-blue-600",
+      "bgColor": "bg-blue-50"
+    }
+  },
+  "needHelp": {
+    "title": "Need Help?",
+    "description": "If you have any questions about the course, feel free to reach out to our support team."
+  }
+}

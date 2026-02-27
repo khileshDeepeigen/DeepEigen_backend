@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,600;12..96,700&display=swap');
+
+:root {
+    --pricing-bg-white: #FFF;
+    --pricing-fg-grey-1: #1A212F;
+    --pricing-fg-grey-2: rgba(26, 33, 47, 0.70);
+    --pricing-fg-grey-3: rgba(26, 33, 47, 0.40);
+    --pricing-fg-secondary: rgba(23, 76, 210, 0.48);
+    --pricing-bg-primary: #174CD2;
+    --pricing-fg-inverse-1: #FFF;
+    --pricing-border-grey-2: rgba(26, 33, 47, 0.24);
+    --pricing-fg-primary: #174CD2;
+    --pricing-border-primary: #174CD2;
+    --pricing-cat-a: #0F9C95;
+    --pricing-cat-b: #F59949;
+    --pricing-check-green: #0F9C0F;
+    --pricing-cross-red: #CE2823;
+    --pricing-best-value-bg: #FFE4C3;
+    --pricing-best-value-text: #8E5004;
+}
+
+.Pricing-page-wrapper {
+    .Pricing__UserHeader {
+        width: 100%;
+        padding: 80px 5vw;
+        height: auto;
+        min-height: 30vh;
+        background: #f1f4fc;
+        color: #000;
+        text-align: center;
+        
+        h1 {
+            font-size: 40px;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 10px auto 0;
+            font-size: 20px;
+            font-weight: 300;
+            max-width: 800px;
+            text-align: center;
+            line-height: 1.5;
+        }
+    }
+
+    .Pricing__Container {
+        padding: 40px 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .or-divider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 27px;
+        margin: 24px 0;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .or-divider .line {
+        flex: 1;
+        height: 1px;
+        background: var(--pricing-border-grey-2);
+    }
+
+    .or-divider span {
+        color: var(--pricing-fg-grey-1);
+        font-size: 16px;
+    }
+
+    .P__Courses {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .P__Course_Header {
+        padding: 40px 0;
+        
+        h1 {
+            font-size: 40px;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .Pricing-page-wrapper {
+        .Pricing__UserHeader {
+            padding: 60px 5vw;
+            
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 18px;
+                max-width: 90%;
+            }
+        }
+        
+        .P__Course_Header {
+            h1 {
+                font-size: 36px;
+            }
+            
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .Pricing-page-wrapper {
+        .Pricing__UserHeader {
+            padding: 40px 20px;
+            
+            h1 {
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 16px;
+                max-width: 100%;
+                line-height: 1.4;
+                padding: 0 10px;
+            }
+        }
+        
+        .Pricing__Container {
+            padding: 30px 20px;
+        }
+        
+        .or-divider {
+            gap: 15px;
+            margin: 20px 0;
+            
+            span {
+                font-size: 14px;
+            }
+        }
+        
+        .P__Courses {
+            width: 100%;
+        }
+        
+        .P__Course_Header {
+            padding: 30px 0;
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .Pricing-page-wrapper {
+        .Pricing__UserHeader {
+            padding: 30px 15px;
+            
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+                padding: 0;
+            }
+        }
+        
+        .Pricing__Container {
+            padding: 20px 15px;
+        }
+        
+        .P__Course_Header {
+            padding: 20px 0;
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

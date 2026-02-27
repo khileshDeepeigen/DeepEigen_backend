@@ -1,0 +1,878 @@
+/* Playlist Page Styles */
+
+.playlist-page {
+  /* min-height: 100vh; */
+  background: #fff;
+}
+
+
+/* Container */
+.playlist-container {
+  /* max-width: 1152px; */
+  width: 80vw;
+  margin: 0 auto;
+  padding: 2.5rem 2.5rem;
+}
+
+
+.playlist-header-text {
+  flex: 1;
+}
+
+.playlist-title {
+  color: #1a212f;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.playlist-subtitle {
+  color: rgba(26, 33, 47, 0.7);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.playlist-subscribe-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.playlist-btn-subscribe {
+  padding: 1rem 1.25rem;
+  background: #174cd2;
+  color: #fff;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  min-width: 14.875rem;
+  transition: background-color 0.2s;
+}
+
+.playlist-btn-subscribe:hover {
+  background-color: rgba(23, 76, 210, 0.9);
+}
+
+.playlist-selected-count {
+  color: rgba(26, 33, 47, 0.7);
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.playlist-count-number {
+  color: #174cd2;
+  font-weight: 700;
+}
+
+/* Content Grid */
+.playlist-content {
+  display: grid;
+  grid-template-columns: 27.438rem 1px 1fr;
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.playlist-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.playlist-section-title {
+  color: #1a212f;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin: 0;
+}
+
+/* Divider */
+.playlist-divider {
+  width: 1px;
+  background: rgba(26, 33, 47, 0.24);
+  align-self: stretch;
+}
+
+/* Courses List */
+.playlist-courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.playlist-course-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.playlist-course-card.active {
+  border: 1px solid #174cd2;
+  background: rgba(23, 76, 210, 0.08);
+}
+
+.playlist-course-card:hover {
+  background: rgba(23, 76, 210, 0.04);
+}
+
+.playlist-course-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.625rem 1.875rem;
+  border-radius: 0.375rem;
+  background: linear-gradient(180deg, #000155 0%, #153f9a 100%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  flex-shrink: 0;
+  width: 8rem;
+  height: 5.625rem;
+}
+
+.playlist-course-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.playlist-course-title {
+  color: #1a212f;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.playlist-course-count {
+  color: #1a212f;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.playlist-count-highlight {
+  color: #174cd2;
+  font-weight: 700;
+}
+
+/* Lectures Section */
+.playlist-lectures-container {
+  position: relative;
+  border-radius: 1rem;
+  max-height: 40rem;
+  border:1px solid #4e4e4f9d;
+  padding: 6px;
+  background: #f1f4fc;
+  overflow: hidden;
+  min-height: 400px; /* Added for better layout */
+}
+
+.playlist-lectures-container ::-webkit-scrollbar{
+  display: none;
+}
+
+.playlist-lectures-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  max-height: 45rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  padding: 1.5rem; /* Added padding */
+}
+
+.playlist-lectures-list::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.playlist-lectures-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.playlist-lectures-list::-webkit-scrollbar-thumb {
+  background: #b9cdff;
+  border-radius: 0.25rem;
+}
+
+.playlist-lecture-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 1.5rem 1.25rem; /* Added padding */
+}
+
+.playlist-lecture-card.selected {
+  border: 1px solid #174cd2;
+  background: rgba(23, 76, 210, 0.2);
+}
+.checkbox-text{
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+
+.playlist-lecture-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.playlist-lecture-info svg {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+.playlist-lecture-title {
+  color: #1a212f;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* Checkbox */
+.playlist-checkbox {
+  display: flex;
+  padding: 0.25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist-checkbox-container {
+  position: relative;
+  display: flex;
+  padding: 0.688rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.playlist-checkbox-unchecked {
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 0.125rem;
+  border: 2px solid #49454f;
+}
+
+.playlist-checkbox-checked {
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 0.125rem;
+  background: #174cd2;
+}
+
+.playlist-checkbox-container svg {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+
+/* Assignments Section */
+.playlist-assignments {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.playlist-assignments-text {
+  color: #1a212f;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 0.5rem 0;
+}
+
+.playlist-assignment-option {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  cursor: pointer;
+}
+
+.playlist-assignment-label {
+  color: #1a212f;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: -0.125rem;
+}
+
+
+
+/* makePlaylist.css mein ye classes add karein */
+
+.playlist-search-container {
+  margin-bottom: 20px;
+}
+
+.playlist-search-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+  background-color: white;
+}
+
+.playlist-search-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.playlist-no-lectures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 546px;
+  width: 110%;
+  text-align: center;
+  color: #6b7280;
+}
+
+
+.playlist-no-lectures img {
+  height: 1546px;
+  width: 110%;
+  object-fit: contain;
+  margin-right: 14px;
+}
+.playlist-no-lectures-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.playlist-no-lectures-subtext {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .playlist-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .playlist-divider {
+    display: none;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .playlist-nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .playlist-nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .playlist-nav-ctas {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .playlist-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .playlist-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .playlist-subscribe-box {
+    align-items: stretch;
+  }
+
+  .playlist-btn-subscribe {
+    width: 100%;
+  }
+
+  .playlist-title {
+    font-size: 2rem;
+  }
+
+  .playlist-subtitle {
+    font-size: 1rem;
+  }
+
+  .playlist-course-icon {
+    width: 6rem;
+    height: 4.5rem;
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .playlist-lectures-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .playlist-title {
+    font-size: 1.5rem;
+  }
+
+  .playlist-course-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .playlist-course-icon {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+.assignments-panel {
+  margin-top: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid rgba(26, 33, 47, 0.24);
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.assignments-header {
+  padding: 30px;
+  border-bottom: 1px solid rgba(26, 33, 47, 0.12);
+}
+
+.assignments-title-section {
+  max-width: 100%;
+}
+
+.assignments-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1A212F;
+  margin: 0 0 12px 0;
+}
+
+.assignments-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(26, 33, 47, 0.7);
+  margin: 0;
+}
+
+/* Two Column Layout */
+.assignments-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  min-height: 500px;
+  position: relative;
+  background: #f1f4fc;
+}
+
+.assignments-two-column::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: rgba(26, 33, 47, 0.12);
+  transform: translateX(-50%);
+}
+
+.assignments-column {
+  position: relative;
+  background: white;
+}
+
+.assignments-column-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.assignments-column-main {
+  background: #F8F9FA;
+}
+
+/* Column Header */
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(26, 33, 47, 0.12);
+  background: white;
+}
+
+.assignments-column-main .column-header {
+  background: #F8F9FA;
+}
+
+.assignments-column-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.column-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1A212F;
+  margin: 0;
+}
+
+.column-count {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(26, 33, 47, 0.7);
+}
+
+.select-all-btn {
+  padding: 6px 16px;
+  background-color: white;
+  border: 1px solid #174CD2;
+  border-radius: 6px;
+  color: #174CD2;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.select-all-btn:hover {
+  background-color: rgba(23, 76, 210, 0.1);
+}
+
+.assignments-column-main .select-all-btn {
+  background: #F8F9FA;
+}
+
+/* Search in Assignments */
+.assignments-search-container {
+  padding: 16px 24px;
+  background: #F8F9FA;
+  border-bottom: 1px solid rgba(26, 33, 47, 0.12);
+}
+
+.assignments-search-input {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid rgba(26, 33, 47, 0.24);
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1A212F;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.assignments-search-input:focus {
+  outline: none;
+  border-color: #174CD2;
+  box-shadow: 0 0 0 3px rgba(23, 76, 210, 0.1);
+}
+
+.assignments-search-input::placeholder {
+  color: rgba(26, 33, 47, 0.4);
+}
+
+/* Assignments List */
+.assignments-list {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 400px;
+  background: #F8F9FA;
+}
+
+.assignments-column-main .assignments-list {
+  background: #F8F9FA;
+}
+
+
+  .column-header{
+      background: #F8F9FA;
+  }
+
+
+
+
+.assignment-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(26, 33, 47, 0.08);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  background: white;
+}
+
+.assignment-item:hover {
+  background-color: rgba(23, 76, 210, 0.05);
+}
+
+.assignment-item:last-child {
+  border-bottom: none;
+}
+
+.assignments-column-main .assignment-item {
+  background: #F8F9FA;
+}
+
+.assignments-column-main .assignment-item:hover {
+  background-color: rgba(23, 76, 210, 0.05);
+}
+
+.lecture-item {
+  background: rgba(23, 76, 210, 0.02);
+}
+
+.assignment-checkbox {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.assignment-checkbox-input {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 2px solid rgba(26, 33, 47, 0.24);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  transition: all 0.2s ease;
+  background: white;
+}
+
+.assignment-checkbox-input:checked {
+  background-color: #174CD2;
+  border-color: #174CD2;
+}
+
+.assignment-checkbox-input:checked::after {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox-input{
+  font-size: 30px;
+  margin-left: 5px;
+  width: 30px;
+}
+
+.assignment-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.assignment-course-code {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(26, 33, 47, 0.6);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.assignment-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A212F;
+  margin: 0;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.duplicate-indicator {
+  color: rgba(26, 33, 47, 0.5);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+/* Scrollbar Styling */
+.assignments-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.assignments-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.assignments-list::-webkit-scrollbar-thumb {
+  background: rgba(26, 33, 47, 0.2);
+  border-radius: 3px;
+}
+
+.assignments-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(26, 33, 47, 0.3);
+}
+
+.custom-assignment-section{
+  margin-top: 30px;
+  display: flex;
+
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .assignments-two-column {
+    grid-template-columns: 1fr;
+  }
+  
+  .assignments-two-column::before {
+    display: none;
+  }
+  
+  .assignments-column {
+    border-bottom: 1px solid rgba(26, 33, 47, 0.12);
+  }
+  
+  .assignments-column:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-assignment-section {
+    padding: 16px;
+    margin-top: 24px;
+  }
+  
+  .assignments-header {
+    padding: 16px;
+  }
+  
+  .assignments-title {
+    font-size: 18px;
+  }
+  
+  .assignments-description {
+    font-size: 13px;
+  }
+  
+  .column-header {
+    padding: 16px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .assignments-column-header {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .select-all-btn {
+    align-self: flex-end;
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  
+  .assignment-item {
+    padding: 12px 16px;
+  }
+  
+  .assignments-search-container {
+    padding: 12px 16px;
+  }
+}
+  
+@media (max-width: 480px) {
+  .checkbox-text {
+    font-size: 14px;
+  }
+  
+  .assignments-title {
+    font-size: 16px;
+  }
+  
+  .assignments-description {
+    font-size: 12px;
+  }
+  
+  .column-title {
+    font-size: 14px;
+  }
+  
+  .column-count {
+    font-size: 12px;
+  }
+  
+  .assignment-name {
+    font-size: 13px;
+  }
+  
+  .assignment-course-code {
+    font-size: 11px;
+  }
+}
+
+/* Lecture item specific styling */
+.lecture-item .assignment-content {
+  padding-left: 0;
+}
+
+.lecture-item .assignment-name {
+  font-weight: 400;
+  color: rgba(26, 33, 47, 0.8);
+}
+
+/* Specific styling to match screenshot */
+.column-header:first-child .column-title {
+  font-weight: 600;
+  color: #1A212F;
+}
+
+.assignments-column-header .column-count {
+  color: rgba(26, 33, 47, 0.7);
+  font-weight: 500;
+}

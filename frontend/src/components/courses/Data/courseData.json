@@ -1,0 +1,183 @@
+{
+  "course": {
+    "id": "AI-1.0Z",
+    "title": "AI-1.0Z: Introduction to Fundamentals of Machine Learning",
+    "description": "A theoretically deep 7 weeks course to provide the fundamentals of machine learning with mathematical rigour, to for necessary prerequisites for other courses.",
+    "heroImage": "https://api.builder.io/api/v1/image/assets/TEMP/74f289bf101aac552149d49ab3d4516eb2c8a48a?width=1200",
+    "level": "Beginner to Intermediate",
+    "contentDepth": "Category-IA",
+    "details": {
+      "instructor": "Sanjeev Sharma",
+      "freeVideosLink": "#",
+      "feeForeign": "$25",
+      "feeIndia": "₹ 999",
+      "firstOffered": "2019",
+      "currentStatus": "Starts Upon Registration",
+      "expectedEngagement": "10 Hrs/Week"
+    },
+    "pricing": {
+      "subscribePrice": 3735,
+      "originalPrice": 9999,
+      "currency": "₹",
+      "period": "year"
+    }
+  },
+  "tabs": {
+    "overview": [
+      {
+        "question": "What was AI-1.0Z ML course in 2019?",
+        "answer": "AI-1.0Z was first offered in June 2019. It was intended to be a 28 weeks mathematically rigorous course. The 2019 course covered several topics in Machine Learning with graduate level mathematical depth."
+      },
+      {
+        "question": "What is AI-1.0Z ML course at present?",
+        "answer": "The first 6 weeks content of the 2019 AI-1.0Z Machine Learning course has been expanded to 7 weeks, and is being offered 2020 onward to serve as a non-exhaustive (number of topics) course in machine learning.\nThis 7 weeks course serves as a prerequisite (for machine learning mathematics) for some of the Category-II courses being offered by Eigen AI Labs.\nThis course can be taken by registrants to get deeply trained machine learning mathematics to develop the ability to further read any book in machine learning. Once registrants go through the mathematical rigour of this short 7 weeks course, we are of the opinion that they will be ready to read and understand machine learning related books to futher expand their knowledge."
+      },
+      {
+        "question": "What about some topics that are mentioned in introductory lectures?",
+        "answer": "The lectures were recorded in 2019 with an intent of providing full course. Since the course has been shortened, in the lectures some of the topics from 2019 course will be mentioned (in terms of what will be covered in the course), but they are no longer the part of the course being offered."
+      },
+      {
+        "question": "What if I take longer duration to understand the content?",
+        "answer": "This is a self-paced course. Typically it should not take you more than 3 months to complete the course. But you have 6 months from the date of registration to complete the course. Beyond that period, please check the details on the Access tab above."
+      },
+      {
+        "question": "What are prerequisites?",
+        "answer": "This course assumes that you have basic background knowledge of\nLinear Algebra\nProbability\n(Multivariate-) Calculus\nFurthermore, registrants are exptected to know at least one computer programming language. The assignments will be in Python, and thus, we expect the registrants to learn python programming concepts on their own.\nWe expect that the registrants can learn libraries like numpy on their own, and can implement mathematical programs using the python programming language."
+      }
+    ],
+    "curriculum": [
+      {
+        "week": "Week 1",
+        "title": "Introduction to Machine Learning and Linear Regression",
+        "lectures": [
+          { "id": 1, "title": "Introduction to Machine Learning", "description": "Overview of ML concepts and applications", "duration": "45 min" },
+          { "id": 2, "title": "Linear Regression: Motivation for Supervised Learning and Linear Regression", "description": "Understanding supervised learning basics", "duration": "60 min" },
+          { "id": 3, "title": "Linear Regression: Feature Functions and Non-Linear Mapping", "description": "Feature engineering and transformations", "duration": "55 min" },
+          { "id": 4, "title": "Linear Regression: Loss Function: Least Squares Loss", "description": "Mathematical foundation of loss functions", "duration": "50 min" },
+          { "id": 5, "title": "Linear Regression: Normal Equation Solution of Least Squares", "description": "Analytical solution to linear regression", "duration": "65 min" },
+          { "id": 6, "title": "Linear Regression: Gradient Descent Algorithm for Least Squares", "description": "Optimization algorithms for regression", "duration": "70 min", "isFree": true }
+        ],
+        "isExpanded": false
+      },
+      {
+        "week": "Week 2",
+        "title": "Probability Foundations and Logistic Regression",
+        "lectures": [
+          { "id": 7, "title": "Probability Theory Review", "description": "Essential probability concepts for ML", "duration": "50 min" },
+          { "id": 8, "title": "Bayesian Inference Basics", "description": "Introduction to Bayesian methods", "duration": "55 min" },
+          { "id": 9, "title": "Logistic Regression: Binary Classification", "description": "Understanding classification problems", "duration": "60 min" },
+          { "id": 10, "title": "Logistic Regression: Sigmoid Function and Decision Boundaries", "description": "Non-linear decision boundaries", "duration": "45 min", "isFree": true },
+          { "id": 11, "title": "Maximum Likelihood Estimation", "description": "Parameter estimation techniques", "duration": "65 min" }
+        ],
+        "isExpanded": false
+      },
+      {
+        "week": "Week 3",
+        "title": "Regularization and Model Evaluation",
+        "lectures": [
+          { "id": 12, "title": "Overfitting and Underfitting", "description": "Model complexity issues", "duration": "40 min" },
+          { "id": 13, "title": "Regularization: L1 and L2", "description": "Preventing overfitting techniques", "duration": "55 min" },
+          { "id": 14, "title": "Bias-Variance Tradeoff", "description": "Fundamental ML concept", "duration": "50 min", "isFree": true },
+          { "id": 15, "title": "Cross-Validation Techniques", "description": "Model validation methods", "duration": "60 min" },
+          { "id": 16, "title": "Performance Metrics", "description": "Accuracy, precision, recall, F1-score", "duration": "45 min" }
+        ],
+        "isExpanded": false
+      },
+      {
+        "week": "Week 4",
+        "title": "Support Vector Machines and Kernel Methods",
+        "lectures": [
+          { "id": 17, "title": "SVM: Maximum Margin Classifier", "description": "Geometric intuition of SVM", "duration": "55 min" },
+          { "id": 18, "title": "Kernel Trick and Feature Spaces", "description": "Non-linear classification", "duration": "60 min" },
+          { "id": 19, "title": "Soft Margin SVM", "description": "Handling non-separable data", "duration": "50 min", "isFree": true },
+          { "id": 20, "title": "Common Kernel Functions", "description": "RBF, polynomial, sigmoid kernels", "duration": "45 min" }
+        ],
+        "isExpanded": false
+      },
+      {
+        "week": "Week 5",
+        "title": "Neural Networks Fundamentals",
+        "lectures": [
+          { "id": 21, "title": "Biological Inspiration and Perceptrons", "description": "History of neural networks", "duration": "40 min" },
+          { "id": 22, "title": "Multi-Layer Perceptrons", "description": "Deep network architecture", "duration": "55 min" },
+          { "id": 23, "title": "Activation Functions", "description": "ReLU, sigmoid, tanh, softmax", "duration": "50 min" },
+          { "id": 24, "title": "Backpropagation Algorithm", "description": "Learning in neural networks", "duration": "65 min", "isFree": true }
+        ],
+        "isExpanded": false
+      },
+      {
+        "week": "Week 6",
+        "title": "Optimization Algorithms and Deep Learning",
+        "lectures": [
+          { "id": 25, "title": "Advanced Optimization: Adam, RMSProp", "description": "Modern optimization techniques", "duration": "55 min" },
+          { "id": 26, "title": "Batch Normalization", "description": "Improving training stability", "duration": "45 min" },
+          { "id": 27, "title": "Dropout Regularization", "description": "Preventing co-adaptation", "duration": "40 min", "isFree": true },
+          { "id": 28, "title": "Convolutional Neural Networks Introduction", "description": "Basics of CNN architecture", "duration": "60 min" }
+        ],
+        "isExpanded": false
+      },
+      {
+        "week": "Week 7",
+        "title": "Advanced Topics and Course Conclusion",
+        "lectures": [
+          { "id": 29, "title": "Recurrent Neural Networks Basics", "description": "Sequential data processing", "duration": "50 min" },
+          { "id": 30, "title": "Attention Mechanism Introduction", "description": "Modern NLP technique", "duration": "55 min", "isFree": true },
+          { "id": 31, "title": "Transfer Learning Concepts", "description": "Leveraging pre-trained models", "duration": "45 min" },
+          { "id": 32, "title": "Course Summary and Next Steps", "description": "Review and future learning paths", "duration": "40 min" }
+        ],
+        "isExpanded": false
+      }
+    ],
+    "accessibility": [
+      {
+        "question": "Course access",
+        "answer": "6 Months from the date of registration or from course start date, whichever is later.\nBeyond this period, registrant will have to pay 10% of the course fee for extension of 2 months for charges related to server, maintenance, and assignment evaluation."
+      }
+    ],
+    "refund": {
+      "policy": [
+        {
+          "question": "Refund Policy",
+          "answer": "Refunds can be done only within 7 days of registration. In case any part of the course becomes online, for that part refund cannot be issued. We recommend checking the free lectures to get an idea of the depth and type of lectures in the course before one registers for the course."
+        },
+        {
+          "question": "",
+          "answer": "If a refund is requested by a registrant, we will subtract the payment-gateway fee from your payment. An additional 1% of the amount will be deducted for convenience, processing, and server charges. The GST amount will also be subtracted. Any part of the course that is online, fee corresponding to that part will also be deducted. The remaining amount will be refunded to you."
+        }
+      ],
+      "details": {
+        "title": "Refund Policy Details",
+        "description": "The below example shows the refund process in case of a full refund, ie, when the course has not become online.",
+        "gatewayFees": [
+          {
+            "type": "National",
+            "percentage": "2.36%",
+            "description": "2% + 18% GST on 2%"
+          },
+          {
+            "type": "International",
+            "percentage": "3.54%",
+            "description": "3% + 18% GST on 3%"
+          }
+        ],
+        "formulas": {
+          "amountReceived": "X = x + x × 18/100\nM = X - X × y/100",
+          "refundInitiated": "N = M - M × 1/100",
+          "refundAfterGST": "N - x × 0.18",
+          "finalRefund": "N - N × y/100"
+        },
+        "bankTransfer": {
+          "amountReceived": "X = x + x × 18/100 (if GST is collected)",
+          "refundInitiated": "N = X - X × 1/100 - x × 18/100",
+          "finalRefund": "N"
+        }
+      }
+    },
+    "assignment": [
+      {
+        "question": "Course Assignments",
+        "answer": "This course has 10+ assignments.\nAlmost every topic will have at least one assignment in the course."
+      }
+    ]
+  }
+}

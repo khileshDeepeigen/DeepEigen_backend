@@ -1,0 +1,230 @@
+{
+  "course": {
+    "title": "RL-1.0Y: Fundamentals of Reinforcement Learning",
+    "video": "video_c",
+    "weeks": [
+      {
+        "id": 1,
+        "name": "Week - 1",
+        "sections": [
+          {
+            "name": "Main Lectures",
+            "lectures": [
+              { "id": 1, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 2, "title": "Assignment-A23", "duration": "3 min", "completed": true },
+              { "id": 3, "title": "Introducing TAs and the Notations", "duration": "3 min", "completed": true },
+              { "id": 4, "title": "The Bigger Picture and the Summary", "duration": "3 min", "completed": false }
+            ]
+          },
+          {
+            "name": "TA-Lectures",
+            "lectures": [
+              { "id": 5, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 6, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          },
+          {
+            "name": "Programming Lectures",
+            "lectures": [
+              { "id": 7, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 8, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          },
+          {
+            "name": "Assignments",
+            "lectures": [
+              { "id": 9, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 10, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Week - 2",
+        "sections": [
+          {
+            "name": "Main Lectures",
+            "lectures": [
+              { "id": 11, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 12, "title": "Assignment-A23", "duration": "3 min", "completed": true },
+              { "id": 13, "title": "Introducing TAs and the Notations", "duration": "3 min", "completed": true },
+              { "id": 14, "title": "The Bigger Picture and the Summary", "duration": "3 min", "completed": false }
+            ]
+          },
+          {
+            "name": "TA-Lectures",
+            "lectures": [
+              { "id": 15, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 16, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          },
+          {
+            "name": "Programming Lectures",
+            "lectures": [
+              { "id": 17, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 18, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          },
+          {
+            "name": "Assignments",
+            "lectures": [
+              { "id": 19, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 20, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Week - 3",
+        "sections": [
+          {
+            "name": "Main Lectures",
+            "lectures": [
+              { "id": 21, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 22, "title": "Assignment-A23", "duration": "3 min", "completed": true },
+              { "id": 23, "title": "Introducing TAs and the Notations", "duration": "3 min", "completed": true },
+              { "id": 24, "title": "The Bigger Picture and the Summary", "duration": "3 min", "completed": false }
+            ]
+          },
+          {
+            "name": "TA-Lectures",
+            "lectures": [
+              { "id": 25, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 26, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          },
+          {
+            "name": "Programming Lectures",
+            "lectures": [
+              { "id": 27, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 28, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          },
+          {
+            "name": "Assignments",
+            "lectures": [
+              { "id": 29, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 30, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Week - 4",
+        "sections": [
+          {
+            "name": "Main Lectures",
+            "lectures": [
+              { "id": 31, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 32, "title": "Assignment-A23", "duration": "3 min", "completed": true },
+              { "id": 33, "title": "Introducing TAs and the Notations", "duration": "3 min", "completed": true },
+              { "id": 34, "title": "The Bigger Picture and the Summary", "duration": "3 min", "completed": false }
+            ]
+          },
+          {
+            "name": "TA-Lectures",
+            "lectures": [
+              { "id": 35, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 36, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          },
+          {
+            "name": "Programming Lectures",
+            "lectures": [
+              { "id": 37, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 38, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          },
+          {
+            "name": "Assignments",
+            "lectures": [
+              { "id": 39, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 40, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Week - 5",
+        "sections": [
+          {
+            "name": "Main Lectures",
+            "lectures": [
+              { "id": 41, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 42, "title": "Assignment-A23", "duration": "3 min", "completed": true },
+              { "id": 43, "title": "Introducing TAs and the Notations", "duration": "3 min", "completed": true },
+              { "id": 44, "title": "The Bigger Picture and the Summary", "duration": "3 min", "completed": false }
+            ]
+          },
+          {
+            "name": "TA-Lectures",
+            "lectures": [
+              { "id": 45, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 46, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          },
+          {
+            "name": "Programming Lectures",
+            "lectures": [
+              { "id": 47, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 48, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          },
+          {
+            "name": "Assignments",
+            "lectures": [
+              { "id": 49, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 50, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Week - 6",
+        "sections": [
+          {
+            "name": "Main Lectures",
+            "lectures": [
+              { "id": 51, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 52, "title": "Assignment-A23", "duration": "3 min", "completed": true },
+              { "id": 53, "title": "Introducing TAs and the Notations", "duration": "3 min", "completed": true },
+              { "id": 54, "title": "The Bigger Picture and the Summary", "duration": "3 min", "completed": false }
+            ]
+          },
+          {
+            "name": "TA-Lectures",
+            "lectures": [
+              { "id": 55, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 56, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          },
+          {
+            "name": "Programming Lectures",
+            "lectures": [
+              { "id": 57, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 58, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          },
+          {
+            "name": "Assignments",
+            "lectures": [
+              { "id": 59, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true },
+              { "id": 60, "title": "Different Field in Machine Learning", "duration": "3 min", "completed": true }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "tabs": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "forum", "label": "Discussion" },
+    { "id": "announcements", "label": "Announcements" }
+  ],
+  "initialExpandedWeeks": [1]
+}

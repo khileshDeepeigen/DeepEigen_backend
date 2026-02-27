@@ -1,0 +1,11 @@
+.about-us-wrapper {
+    margin: 0 auto;
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-us-container {
+        width: 80vw;
+    }
+}

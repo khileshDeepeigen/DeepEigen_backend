@@ -1,0 +1,105 @@
+.swiper-container {
+  width: 100%;
+  max-width: 1150px;
+}
+
+/* Outer Card Wrapper */
+.reminder-card {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+/* Yellow Card Box */
+.reminder-box {
+  background: #ffd06c;
+  padding: 24px;
+  border-radius: 16px;
+  width: 100%;
+}
+
+/* Flex wrapper responsive */
+.reminder-content {
+  display: flex;
+  flex-direction: column;   /* Mobile */
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .reminder-content {
+    flex-direction: row;    /* Desktop */
+    align-items: center;
+  }
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  min-width: 0; /* FIX for text not wrapping */
+}
+
+.reminder-title {
+  color: #1a212f;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .reminder-title {
+    font-size: 28px;
+  }
+}
+
+.course-wrapper {
+  padding-bottom: 16px;
+}
+
+.course-text {
+  color: rgba(26, 33, 47, 0.7);
+  font-size: 14px;
+  line-height: 1.4;
+  word-break: break-word; /* Ensures wrapping */
+}
+
+@media (min-width: 768px) {
+  .course-text {
+    font-size: 16px;
+  }
+}
+
+.course-name {
+  font-weight: 600;
+}
+
+/* Right Section */
+.right-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .right-section {
+    width: auto;
+    align-items: flex-start;
+  }
+}
+
+.pay-btn {
+  width: 100%;
+  background: #174cd2;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+
+.due-date {
+  color: rgba(26, 33, 47, 0.7);
+  font-size: 14px;
+}

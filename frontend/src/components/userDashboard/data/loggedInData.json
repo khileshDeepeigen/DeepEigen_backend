@@ -1,0 +1,160 @@
+{
+  "user": {
+    "name": "John Doe",
+    "plan": "Basic"
+  },
+  "currentCourse": {
+    "title": "AI-1.0Z: Introduction to Fundamentals of Machine Learning",
+    "instructor": "Sajeev Sharma"
+  },
+  "sections": ["courses", "playlist", "certificates", "ai-labs"],
+  "customizedCourse": {
+    "title": "My Customized Course",
+    "lectures": 43,
+    "assignments": 3
+  },
+  "courses": [
+    {
+      "id": "1",
+      "title": "AI-1.0Z: Introduction to Fundamentals of Machine Learning",
+      "description": "A theoretically deep 7 weeks course to provide the fundamentals of machine learning with mathematical rigour, to for necessary prerequisites for other courses.",
+      "validity": "167 days",
+      "category": "1A",
+      "assignments": 28,
+      "completion": 62,
+      "image": "https://api.builder.io/api/v1/image/assets/TEMP/d534ad339983623000d55526c9a3e7a6d8407489?width=734"
+    },
+    {
+      "id": "2",
+      "title": "AI-1.0Z: Introduction to Fundamentals of Machine Learning",
+      "description": "A theoretically deep 7 weeks course to provide the fundamentals of machine learning with mathematical rigour, to for necessary prerequisites for other courses.",
+      "validity": "167 days",
+      "category": "1A",
+      "assignments": 28,
+      "completion": 62,
+      "image": "https://api.builder.io/api/v1/image/assets/TEMP/d534ad339983623000d55526c9a3e7a6d8407489?width=734"
+    },
+    {
+      "id": "3",
+      "title": "AI-1.0Z: Introduction to Fundamentals of Machine Learning",
+      "description": "A theoretically deep 7 weeks course to provide the fundamentals of machine learning with mathematical rigour, to for necessary prerequisites for other courses.",
+      "validity": "167 days",
+      "category": "1A",
+      "assignments": 28,
+      "completion": 0,
+      "image": "https://api.builder.io/api/v1/image/assets/TEMP/d534ad339983623000d55526c9a3e7a6d8407489?width=734"
+    },
+    {
+      "id": "4",
+      "title": "AI-1.0Z: Introduction to Fundamentals of Machine Learning",
+      "description": "A theoretically deep 7 weeks course to provide the fundamentals of machine learning with mathematical rigour, to for necessary prerequisites for other courses.",
+      "validity": "167 days",
+      "category": "1A",
+      "assignments": 28,
+      "completion": 0,
+      "image": "https://api.builder.io/api/v1/image/assets/TEMP/d534ad339983623000d55526c9a3e7a6d8407489?width=734"
+    },
+    {
+      "id": "5",
+      "title": "AI-1.0Z: Introduction to Fundamentals of Machine Learning",
+      "description": "A theoretically deep 7 weeks course to provide the fundamentals of machine learning with mathematical rigour, to for necessary prerequisites for other courses.",
+      "validity": "167 days",
+      "category": "1A",
+      "assignments": 28,
+      "completion": 100,
+      "image": "https://api.builder.io/api/v1/image/assets/TEMP/d534ad339983623000d55526c9a3e7a6d8407489?width=734"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "1",
+      "title": "RL-1.0Y: Fundamentals of Reinforcement Learning",
+      "completionDate": "12 August 25",
+      "grade": "100%",
+      "image": "https://api.builder.io/api/v1/image/assets/TEMP/00aaa0f6381e1aba2db6ba98caef3394072aaae8?width=344"
+    },
+    {
+      "id": "2",
+      "title": "RL-1.0Y: Fundamentals of Reinforcement Learning",
+      "completionDate": "12 August 25",
+      "grade": "100%",
+      "image": "https://api.builder.io/api/v1/image/assets/TEMP/1b87f0f52bcdb654345f4b64663250cfb2ffe460?width=344"
+    },
+    {
+      "id": "3",
+      "title": "RL-1.0Y: Fundamentals of Reinforcement Learning",
+      "completionDate": "12 August 25",
+      "grade": "100%",
+      "image": "https://api.builder.io/api/v1/image/assets/TEMP/1b87f0f52bcdb654345f4b64663250cfb2ffe460?width=344"
+    },
+    {
+      "id": "4",
+      "title": "RL-1.0Y: Fundamentals of Reinforcement Learning",
+      "completionDate": "12 August 25",
+      "grade": "100%",
+      "image": "https://api.builder.io/api/v1/image/assets/TEMP/00aaa0f6381e1aba2db6ba98caef3394072aaae8?width=344"
+    },
+    {
+      "id": "5",
+      "title": "RL-1.0Y: Fundamentals of Reinforcement Learning",
+      "completionDate": "12 August 25",
+      "grade": "100%",
+      "image": "https://api.builder.io/api/v1/image/assets/TEMP/00aaa0f6381e1aba2db6ba98caef3394072aaae8?width=344"
+    }
+  ],
+  "playlists": [
+    {
+      "id": "1",
+      "title": "Machine Learning Playlist-1",
+      "lectures": 43,
+      "assignments": 3
+    },
+    {
+      "id": "2",
+      "title": "Deep Learning Fundamentals",
+      "lectures": 35,
+      "assignments": 2
+    },
+    {
+      "id": "3",
+      "title": "Neural Networks Workshop",
+      "lectures": 28,
+      "assignments": 4
+    },
+    {
+      "id": "4",
+      "title": "AI Ethics and Practices",
+      "lectures": 22,
+      "assignments": 1
+    },
+    {
+      "id": "5",
+      "title": "Reinforcement Learning Series",
+      "lectures": 56,
+      "assignments": 5
+    }
+  ],
+  "aiLabs": {
+    "title": "AI Labs Section",
+    "description": "Content coming soon..."
+  },
+  "messages": {
+    "welcome": "Let's continue your learning",
+    "courses": {
+      "title": "My Courses",
+      "description": "View all your courses and their track its progress"
+    },
+    "certificates": {
+      "title": "My Certificates",
+      "description": "View and share all your earned certificates"
+    },
+    "playlists": {
+      "title": "My Playlists",
+      "description": "View all your playlist of lectures here"
+    },
+    "aiLabs": {
+      "title": "AI Labs Section",
+      "description": "Content coming soon..."
+    }
+  }
+}

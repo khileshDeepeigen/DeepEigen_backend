@@ -1,0 +1,234 @@
+.team-page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 80px 24px;
+  background: #fff;
+
+  .team-container {
+    width: 100%;
+    max-width: 1052px;
+    display: flex;
+    flex-direction: column;
+    gap: 112px;
+  }
+
+  .team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-title {
+    color: #1A212F;
+    font-family: 'Bricolage Grotesque', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    margin: 0;
+  }
+
+  .section-subtitle {
+    color: rgba(26, 33, 47, 0.7);
+    font-family: 'Bricolage Grotesque', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 324px));
+    gap: 40px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* 
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.team-image-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 324px;
+  border-radius: 30.28px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+.team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.team-name {
+  color: #1A212F;
+  font-family: 'Bricolage Grotesque', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  margin: 0;
+}
+
+.team-role {
+  color: rgba(26, 33, 47, 0.7);
+  font-family: 'Bricolage Grotesque', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  white-space: pre-line;
+} */
+
+  .team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: none;
+    width: 100%;
+    max-width: 320px;
+    /* perfect for mobile & tablets */
+    margin: 0 auto;
+  }
+
+  .team-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* keeps image square */
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .team-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .team-info {
+    width: 100%;
+    /* border: 1px solid #000; */
+    padding: 8px 10px;
+    background: #fff;
+    box-sizing: border-box;
+  }
+
+  .team-name {
+    color: #1A212F;
+    font-family: 'Bricolage Grotesque', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .team-role {
+    color: rgba(26, 33, 47, 0.7);
+    font-family: 'Bricolage Grotesque', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 4px 0 0;
+    white-space: normal;
+    /* ensures wrapping */
+  }
+}
+
+
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  .team-page {
+    padding: 60px 20px;
+  }
+
+  .team-container {
+    gap: 80px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+  }
+
+  .team-grid {
+    gap: 32px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .team-page {
+    padding: 40px 16px;
+  }
+
+  .team-container {
+    gap: 60px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    letter-spacing: -0.56px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .team-card {
+    max-width: 100%;
+  }
+
+  .team-info {
+    padding: 6px 8px;
+  }
+
+  .team-name {
+    font-size: 15px;
+  }
+
+  .team-role {
+    font-size: 13px;
+  }
+}

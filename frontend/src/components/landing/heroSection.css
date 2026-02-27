@@ -1,0 +1,263 @@
+:root {
+  --brand-blue: #174CD2;
+  --text-dark: #1A212F;
+  --divider: rgba(26, 33, 47, 0.24);
+
+  /* Base font scale for rems */
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container scales fluidly with clamp() */
+.home-container {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+/* Banner */
+.hero-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: clamp(8rem, 18vw, 12rem);
+  width: 100%;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.hero-banner__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-banner__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(0.4rem);
+  z-index: 1;
+}
+
+.hero-banner__title {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  text-align: center;
+  z-index: 2;
+}
+
+/* Main Hero */
+.hero {
+  margin-top: 1.75rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(180deg, #DCEBF4 0%, #FEF1FF 100%);
+  /* padding: clamp(2rem, 5vw, 6rem); */
+  padding: 10vh 5vw;
+  display: flex;
+  gap: 2vw;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: green;
+  /* border: 1px solid black; */
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  max-width: 38vw;
+  /* background-color: lightblue; */
+  /* border: 1px solid black; */
+}
+
+.hero__title {
+  color: var(--text-dark);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  font-size: clamp(2rem, 3vw + 1rem, 3.5rem);
+}
+
+.hero__desc {
+  max-width: 30rem;
+  color: rgba(26, 33, 47, 0.7);
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.375rem);
+  line-height: 1.6;
+}
+
+.hero__cta {
+  display: inline-flex;
+  height: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4.25rem;
+  border-radius: 0.5rem;
+  background: var(--brand-blue);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: fit-content;
+}
+
+.hero__cta:hover {
+  background: #0e38a5;
+}
+
+.hero__media {
+  width: 100%;
+  max-width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: lightgreen; */
+  /* border: 1px solid black; */
+}
+
+.hero__media-oval {
+  position: relative;
+  /* height: clamp(15rem, 30vw, 22rem); */
+  height: 20vw;
+  width: 100%;
+  border-radius: 20rem;
+  background: #fff;
+  overflow: hidden;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInVideo 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+@keyframes fadeInVideo {
+  to { opacity: 1; }
+}
+
+/* Features Section */
+.features {
+  margin: 0 auto;
+  margin-top: -3rem;
+  background: #fff;
+  border-radius: 1.25rem;
+  padding: clamp(1rem, 4vw, 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.12);
+  flex-wrap: wrap;
+  width: 90%;
+  /* border: 1px solid black; */
+}
+
+.feature {
+  flex: 1 1 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.feature__title {
+  color: var(--text-dark);
+  font-size: clamp(0.875rem, 0.6vw + 0.5rem, 1rem);
+}
+
+.divider {
+  display: none;
+  width: 1px;
+  height: 3rem;
+  background: var(--divider);
+}
+
+/* Larger screens */
+@media (min-width: 1024px) {
+  .divider {
+    display: block;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1023px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__content{
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__desc {
+  max-width: 100%;
+}
+
+  .hero__media {
+    max-width: 100%;
+  }
+
+.hero__media-oval {
+  height: 25vw;
+  width: 60%;
+}
+
+  .features {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .divider {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+/* Container scales fluidly with clamp() */
+.home-container {
+  width: 95vw;
+  padding: 1em 0;
+}
+  
+  .hero {
+    padding: 2rem 1rem;
+  gap: 5vw;
+  }
+
+  .hero-banner__title {
+    font-size: 1.5rem;
+  }
+
+  .hero__media-oval {
+  height: 35vw;
+  width: 75%;
+}
+
+  .features {
+    padding: 1.5rem;
+    margin-top: -1rem;
+  }
+
+  .hero__cta {
+  height: 2.25rem;
+  font-size: .8em;
+  padding: 0 2.25rem;
+}
+}
